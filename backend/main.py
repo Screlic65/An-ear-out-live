@@ -28,7 +28,7 @@ bearer_token = os.getenv("X_BEARER_TOKEN")
 if not news_api_key: raise ValueError("NEWS_API_KEY is not set in the .env file!")
 
 print("Loading sentiment analysis model...")
-sentiment_pipeline = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment-latest")
+sentiment_pipeline = pipeline("sentiment-analysis", model="finiteautomata/bertweet-base-sentiment-analysis")
 print("Model loaded.")
 
 API_TIMEOUT = 10
