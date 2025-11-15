@@ -7,7 +7,8 @@ import SentimentScore from './components/SentimentScore';
 import SkeletonCard from './components/SkeletonCard';
 import EmptyState from './components/EmptyState';
 
-const socket = io('http://localhost:8000');
+const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL || 'http://localhost:8000';
+const socket = io(BACKEND_URL);
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
