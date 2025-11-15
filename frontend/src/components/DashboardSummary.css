@@ -1,0 +1,50 @@
+.summary-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Left (filters) | Right (score) */
+  align-items: center;
+  gap: 20px;
+}
+.placeholder-summary {
+  min-height: 120px; /* Prevents layout shift on load */
+}
+
+/* --- Left Side: Filter Buttons --- */
+.filter-title {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-buttons button {
+  padding: 8px 15px;
+  border: 1px solid #dfe6e9;
+  background-color: transparent;
+  border-radius: 20px; /* Pill shape */
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+.filter-buttons button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+  font-weight: bold;
+}
+.filter-buttons button:hover:not(.active) {
+  background-color: #f7f9fa;
+  border-color: #bdc3c7;
+}
+
+/* --- Right Side: Sentiment Score --- */
+.summary-right {
+  border-left: 2px solid #f0f0f0;
+  padding-left: 20px;
+}

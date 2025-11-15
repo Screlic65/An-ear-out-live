@@ -1,0 +1,40 @@
+.score-container {
+  text-align: center;
+}
+
+.score-value {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.score-label {
+  font-size: 1em;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Color classes for the score number */
+.positive-score { color: #27ae60; }
+.negative-score { color: #c0392b; }
+.neutral-score { color: #2c3e50; }
+
+/* The multi-colored bar container */
+.sentiment-breakdown-bar {
+  display: flex;
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden; /* This is key to making the segments look right */
+  background-color: #ecf0f1; /* Fallback for 0% segments */
+}
+
+.bar-segment {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Background color utility classes */
+.positive-bg { background-color: #27ae60; }
+.negative-bg { background-color: #c0392b; }
+.neutral-bg { background-color: #7f8c8d; }

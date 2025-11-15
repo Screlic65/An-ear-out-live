@@ -1,0 +1,12 @@
+# Python Environment Files
+venv/
+*.pyc
+__pycache__/
+
+# Node Environment Files
+/frontend/node_modules
+/frontend/dist
+
+# Secret Files (CRITICAL: Do not upload API keys)
+.env
+/backend/.env

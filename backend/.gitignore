@@ -1,0 +1,6 @@
+# Ignore Python virtual environment
+backend/venv/
+
+# Ignore secret files
+.env
+backend/.env
